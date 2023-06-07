@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.brand-name:hover {
+  color: aqua;
+}
+.brand-name {
+  text-decoration: none;
+  color: red;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 55;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border-top: 4px solid #e74c3c;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
