@@ -6,7 +6,7 @@ import SearchPage from "./components/SearchPage";
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/Book.Store">
+      <BrowserRouter basename="/book_store">
         <Routes>
           <Route exact path="/" element={<HomePage/>}/>
           <Route path="/book/:id" element={<BookDetails/>}/>
